@@ -1,0 +1,31 @@
+name: stamp-private-sha
+on:
+  push:
+    paths:
+      - 'legal/private-archive-*.SHA256'
+  workflow_dispatch:
+
+jobs:
+  ots:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OpenTimestamps
+        run: sudo apt-get update && sudo apt-get install -y opentimestamps-client
+      - name: Stamp SHA256 files
+        run: |
+          shopt -s nullglob
+          for f in legal/private-archive-*.SHA256; do
+            ots stamp "$f"
+          done
+      - name: Commit .ots proofs
+        run: |
+          if git status --porcelain | grep '.ots'; then
+            git config user.email "${{ github.actor }}@users.noreply.github.com"
+            git config user.name "github-actions[bot]"
+            git add legal/*.ots
+            git commit -m "chore(ots): add OpenTimestamps proofs for sealed archives"
+            git push
+          fi
