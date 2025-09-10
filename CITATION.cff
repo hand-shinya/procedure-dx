@@ -5,9 +5,9 @@ authors:
     given-names: Shinya Handa
 identifiers:
   - type: doi
-    value: TBD
+    value: 10.5281/zenodo.17090460
 repository-code: "https://github.com/hand-shinya/procedure-dx"
 license: Apache-2.0
 url: "https://github.com/hand-shinya/procedure-dx"
-version: "v0.1.0"
+version: "v0.2.0"
 date-released: "2025-09-10"
