@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17090460.svg)](https://doi.org/10.5281/zenodo.17090460)
 # Procedure DX Platform — Template (JustForm × Shonin)
 
 - 公開: `docs/` と `src/` の“公開版”のみ（Zenodo連携でDOI）
