@@ -1,0 +1,9 @@
+{
+  "title": "Procedure DX Platform (JustForm + Shonin) — Public Snapshot",
+  "upload_type": "software",
+  "description": "Public snapshot; core sealed with timestamp proofs.",
+  "creators": [{"name": "Your Name", "affiliation": "Your Org"}],
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": ["Procedure DX","JustForm","Shonin","WebAuthn","Hashchain","Ephemeral"]
+}

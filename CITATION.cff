@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Procedure DX Platform (JustForm + Shonin) — Public Snapshot"
+authors:
+  - family-names: Shinya Handa
+    given-names: Shinya Handa
+identifiers:
+  - type: doi
+    value: TBD
+repository-code: "https://github.com/hand-shinya/procedure-dx"
+license: Apache-2.0
+url: "https://github.com/hand-shinya/procedure-dx"
+version: "v0.1.0"
+date-released: "2025-09-10"

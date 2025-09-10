@@ -1,0 +1,11 @@
+legal/SEALED/**
+!legal/SEALED/README_DO_NOT_COMMIT.md
+.DS_Store
+Thumbs.db
+__pycache__/
+node_modules/
+*.zip
+*.tgz
+*.tar.gz
+*.env
+.env
