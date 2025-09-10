@@ -9,3 +9,9 @@ node_modules/
 *.tar.gz
 *.env
 .env
+# safety
+drafts/**
+*_drafts/**
+*.tmp
+*.bak
+~$*
